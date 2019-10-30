@@ -1,4 +1,6 @@
-gtk2_dir = join_paths(theme_dir, 'gtk-2.0')
+# destination directory name is the same as current directory
+dest_dir = meson.current_source_dir().split('/')[-1]
+gtk2_dir = join_paths(theme_dir, dest_dir)
 
 # static theme files to copy
 gtk2_theme_data_sources = [
