@@ -581,4 +581,20 @@ UnityPanelWidget, .unity-panel {
   }
 }
 
+// fix gnome-software color which is visible
+// different than titlebar one due to the
+// linear gradient. Double check this does not break
+// gtk theme
+headerbar.primary-toolbar {
+  background-image: none;
+  background-color: $headerbar_bg_color;
+}
+
+.background:not(.csd) headerbar:not(.titlebar) {
+  border-radius: 0;
+  box-shadow: none;
+
+  &.inline-toolbar { border-style: none; }
+}
+
 SheetStyleDialog.unity-force-quit { background-color: $bg_color; }
