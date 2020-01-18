@@ -7,10 +7,7 @@ debian/*debhelper*
 debian/files
 debian/*.substvars
 debian/tmp/
-debian/yaru-theme-gnome-shell/
-debian/yaru-theme-gtk/
-debian/yaru-theme-icon/
-debian/yaru-theme-sound/
+debian/yaru-theme-*
 
 # snapcraft build artefacts
 parts/
